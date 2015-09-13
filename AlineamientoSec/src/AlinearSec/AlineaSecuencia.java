@@ -10,10 +10,13 @@ package AlinearSec;
  * @author JuanC
  */
 public class AlineaSecuencia {
+    
+    int matrizS[][];
+    int espacio;
 
     public AlineaSecuencia() {
         
-        int matrizS[][] = new int[4][4];
+        matrizS = new int[4][4];
         // Inicializa matriz S
         matrizS[0][0] = 10;
         matrizS[0][1] = -1;
@@ -31,6 +34,24 @@ public class AlineaSecuencia {
         matrizS[3][1] = -3;
         matrizS[3][2] = 0;
         matrizS[3][3] = 8;
+        //Inicializar valor del espacio
+        espacio = -5;
+    }
+
+    public int[][] getMatrizS() {
+        return matrizS;
+    }
+
+    public void setMatrizS(int[][] matrizS) {
+        this.matrizS = matrizS;
+    }
+
+    public int getEspacio() {
+        return espacio;
+    }
+
+    public void setEspacio(int espacio) {
+        this.espacio = espacio;
     }
 
 }
